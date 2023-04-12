@@ -22,4 +22,5 @@ jobs:
     - name: Run tests
       uses: actions-rs/cargo@v1
       with:
+        working-directory: ./hello
         command: test
