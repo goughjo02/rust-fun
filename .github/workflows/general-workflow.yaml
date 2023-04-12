@@ -12,6 +12,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./hello  
+
     steps:
     - uses: actions/checkout@v2
     - name: Install Rust
@@ -22,5 +26,4 @@ jobs:
     - name: Run tests
       uses: actions-rs/cargo@v1
       with:
-        working-directory: ./hello
         command: test
