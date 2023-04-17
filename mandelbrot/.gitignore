@@ -1,0 +1,8 @@
+# typical rust files to ignore
+# Rust tooling
+Cargo.lock
+target/
+
+# macOS
+.DS_Store
+```
